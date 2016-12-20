@@ -1,0 +1,39 @@
+BackTracking summary
+
+public void buildString(TreeNode root, StringBuilder sb){
+        if (root == null){
+            sb.append("null,");
+            return;
+        }
+        sb.append(root.val).append(",");
+        buildString(root.left, sb);
+        buildString(root.right, sb);
+    }
+StringBuilder here seems like a global variable, updated each time.
+
+int index = 0;
+public TreeNode buildTree(String[] arr, int index2){
+        if (arr[index].equals("null")){
+            index++;
+            index2++;
+            return null;
+        }
+        TreeNode node = new TreeNode(Integer.parseInt(arr[index++]));
+        //TreeNode node = new TreeNode(Integer.parseInt(arr[index2++]));
+        node.left = buildTree(arr, index2++);
+        node.right = buildTree(arr, index2++);
+        return node;
+    }
+index2 is not working as it will always be the same position from parameter
+Same for string
+
+public TreeNode buildTree(String[] arr, int[] index2 or Deque<String> dq){
+	//update index2[0] every time will work.
+	//every time removefirst in deque will work, too.
+}
+
+
+if the method need to be stateless, try to avoid global/static variables
+
+
+

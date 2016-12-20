@@ -1,0 +1,22 @@
+BFS Summary
+
+queue<T> q = new LinkedList<T>;
+q.offer();
+
+multiple things to store in queue
+like: 	row and col in array
+		* wrap int a class Index queue<Index>
+		* queue<int[]> 
+		* queue.offer(row) queue.offer(col) multiple times
+
+pay attention to LTE
+try to avoid do same thing in the future
+keep track of T visited
+
+while (!queue.isEmpty()){
+	tmp = queue.poll();
+	if (unvisited && qualified){
+		mark visited;
+		queue.offer();
+	}
+}

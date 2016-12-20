@@ -1,0 +1,11 @@
+Sort Summary
+
+Arrays.sort(array, new Comparator<T>(){
+	public int compare(T a, T b){
+		//increase
+		return a - b;
+		// return a < b ? -1 : a == b ? 0 : 1;
+		//a < b -1
+		//a > b 1
+	}
+});

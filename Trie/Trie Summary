@@ -1,0 +1,33 @@
+Trie Summary
+
+class TrieNode {
+    char c;
+    TrieNode[] arr;
+    boolean isEnd;
+    // Initialize your data structure here.
+    public TrieNode() {
+        c = ' ';
+        arr = new TrieNode[26];
+        isEnd = false;
+    }
+    public TrieNode(char c) {
+        this.c = c;
+        arr = new TrieNode[26];
+        isEnd = false;
+    }
+    public TrieNode getLetter(int index){
+        return arr[index];
+    }
+    public void addLetter(TrieNode node, int index){
+        arr[index] = node;
+    }
+}
+
+public class Trie {
+    private TrieNode root;
+
+    public Trie() {
+        root = new TrieNode();
+    }
+    .......
+}
