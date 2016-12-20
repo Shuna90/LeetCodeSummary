@@ -1,0 +1,6 @@
+Bit summary
+
+1. XOR
+0 ^ a = a;
+a ^ b = b ^ a;
+a ^ a = 0;
