@@ -1,6 +1,21 @@
 Bit summary
 
-1. XOR
+1. XOR	^
+find different bit or duplicate:
 0 ^ a = a;
 a ^ b = b ^ a;
 a ^ a = 0;
+1 ^ a = 反
+
+2. NOT	~
+find nagative or minus: ~x + 1
+2: 	0010
+-2:	~0010 + 1 = 1101 + 1 = 1110
+
+3. AND	&
+find same bit or carry:
+
+4. Shift >>> >> <<
+>>>: 0
+>>: signed 0 or 1
+<<:  2 times 

@@ -1,0 +1,15 @@
+Stack & Queue summary
+
+Stack<Integer> stack = new Stack<>();
+push();
+pop();
+peek();
+empty();
+
+Integer: index
+
+Deque<> dq = new LinkedList<>();
+both from head and tail
+isEmpty() size()
+as a stack: push pop peek = addFirst removeFirst peekFirst
+as a queue: add/offer remove/poll peek = addLast/offerLast removeFirst/offerFirst peekFirst
