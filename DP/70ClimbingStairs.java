@@ -11,4 +11,15 @@ public class Solution {
         }
         return dp[n];
     }
+    public int climbStairs(int n) {
+        int prepre = 1;
+        int pre = 1;
+        int cur = 1;
+        for (int i = 2; i <= n; i++){
+            cur = pre + prepre;
+            prepre = pre;
+            pre = cur;
+        }
+        return cur;
+    }
 }

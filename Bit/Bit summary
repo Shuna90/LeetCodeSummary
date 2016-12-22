@@ -19,3 +19,5 @@ find same bit or carry:
 >>>: 0
 >>: signed 0 or 1
 <<:  2 times 
+
+5. n & (n - 1) delete last 1 bit
