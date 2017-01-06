@@ -21,6 +21,9 @@ s.split(regex);
 	String[] arr = s.split(" +");
 	arr[0] = ""
 	arr.length == 0 =======> no "/" in s
+
+	if just a dot .
+	split("\\.")
 	
 s.trim();
 s.substring(include, exclude);
