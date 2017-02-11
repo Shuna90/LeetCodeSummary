@@ -4,7 +4,7 @@
 Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 */
 
-public ListNode mergeKLists(ListNode[] lists) {
+public ListNode mergeKLists(ListNode[] lists) {78Subsets
         if (lists == null || lists.length == 0){
             return null;
         }
