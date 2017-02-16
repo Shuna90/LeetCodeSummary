@@ -63,4 +63,5 @@ public TreeNode deleteNode(TreeNode root, int key) {
         while (root.left != null){
             root = root.left;
         }
-        retur
+        return root;
+    }
